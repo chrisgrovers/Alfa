@@ -14,7 +14,7 @@ var phonAlpha = function(string) {
     i: 'India',
     j: 'Juliett',
     k: 'Kilo',
-    l: 'India',
+    l: 'Lima',
     m: 'Mike',
     n: 'November',
     o: 'Oscar',
