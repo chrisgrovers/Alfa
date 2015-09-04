@@ -11,15 +11,23 @@
 
 
 function Consecutive(arr) { 
+  arr = arr.sort(function(a,b){return a - b});
+  console.log(arr);
+  var fillArr = [];
+  for (var i = arr[0]; i < arr[arr.length - 1]; i++){
+    if (arr.indexOf(i) === -1) {
+      fillArr.push(i);
+    }
+  }
 
-  
-  return arr; 
+  return fillArr.length; 
          
 }
    
 
 
-
+console.log(Consecutive([5,10,15]), 'should be 8')
+console.log(Consecutive([-2, 10, 4]), 'should be 10')
 
 
 
